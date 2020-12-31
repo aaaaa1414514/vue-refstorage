@@ -1,0 +1,19 @@
+{
+  "name": "refstorage",
+  "version": "1.0.0",
+  "description": "基于vue3 Composition api 响应式的storage",
+  "main": "./src/refStorage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaaaa1414514/refStorage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaaaa1414514/refStorage/issues"
+  },
+  "homepage": "https://github.com/aaaaa1414514/refStorage#readme"
+}
