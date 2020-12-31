@@ -1,4 +1,4 @@
-### refStorage
+### vue-refstorage
 <br>创建响应式对象 与 浏览器Storage关联 
 <br>修改响应式对象 时 浏览器Storage中与其对应的键值也会被修改
 
@@ -9,7 +9,7 @@
 ## demo
 ```
 
-import {refLocal,refSession} from 'vue-refStorage'
+import {refLocal,refSession} from 'vue-refstorage'
 
 steup(props){
   const token = refLocal('toekn')
