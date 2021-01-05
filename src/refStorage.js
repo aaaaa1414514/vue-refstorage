@@ -8,11 +8,11 @@ export function refLocal (key, val) {
 
 // sessionStorage
 export function refSession (key, val) {
-  return init(key, 'session', val)
+  return init(key, val, 'session')
 }
 
 // key 键名  type： local&session  val:默认值
-function init (key, type, val) {
+function init (key, val, type) {
   val && setStorageVal(key, val, type)
 
   const storageVal = ref(getStorageVal(key, type))
@@ -25,6 +25,7 @@ function init (key, type, val) {
   return storageVal
 }
 
+// 获取 Storage值
 function getStorageVal (key, type) {
   // localStorage 还是 sessionStorage
   const Storage = getStorage(type)
