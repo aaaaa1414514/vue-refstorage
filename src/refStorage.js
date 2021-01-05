@@ -3,7 +3,7 @@ import { ref, watch } from 'vue'
 
 // localhostStorage
 export function refLocal (key, val) {
-  return init(key, 'local', val)
+  return init(key, val, 'local')
 }
 
 // sessionStorage
