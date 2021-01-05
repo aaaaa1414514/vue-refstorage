@@ -13,7 +13,9 @@ export function refSession (key, val) {
 
 // key 键名  type： local&session  val:默认值
 function init (key, val, type) {
-  val && setStorageVal(key, val, type)
+  if (val || val === '') {
+    setStorageVal(key, val, type)
+  }
 
   const storageVal = ref(getStorageVal(key, type))
 
