@@ -5,7 +5,7 @@
 <br>使用前请确认node_modules中已经安装vue3
 <br>基于vue3的ref api
 
-
+<br>演示地址：[文本](https://github.com/aaaaa1414514/vue-refstorage/dist)
 ## demo
 ```
 
@@ -14,7 +14,7 @@ import {refLocal,refSession} from 'vue-refstorage'
 steup(props){
   const token = refLocal('toekn')
   
-  // 设置默认值
+  // 当localStorage中没有toekn键名 时 将在localStorage中创建 toekn:xxxxxxx
   const token2 = refLocal('toekn','xxxxxxx')
   
   
@@ -26,13 +26,13 @@ steup(props){
 ```
   参数 key value
   key: localStorage的键名  默认返回 ''
-  value: 设置localStorage key的值  不传为localStorage中key的默认值
+  value: 当localStorage没有当前key时返回 value 不传返回默认值 ''
 ```
        
 ## refSession (Function)
 ```
   参数 key value
   key: sessionStorage的键名  默认返回 ''
-  value: 指定sessionStorage key的值  不传为sessionStorage中key的默认值
+  value: 当sessionStorage没有当前key时返回 value 不传返回默认值 ''
 ```
 

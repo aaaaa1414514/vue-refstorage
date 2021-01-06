@@ -13,15 +13,20 @@ export function refSession (key, val) {
 
 // key 键名  type： local&session  val:默认值
 function init (key, val, type) {
-  if (val || val === '') {
-    setStorageVal(key, val, type)
+  let storageVal = getStorageVal(key, type)
+
+  if (!storageVal) {
+    setStorageVal(key, val || '', type)
   }
 
-  const storageVal = ref(getStorageVal(key, type))
+  storageVal = ref(getStorageVal(key, type))
 
   watch(storageVal, (e) => {
+    console.log(e)
     // 给storage赋值
     setStorageVal(key, e, type)
+  }, {
+    deep: true
   })
 
   return storageVal
