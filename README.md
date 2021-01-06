@@ -5,7 +5,7 @@
 <br>使用前请确认node_modules中已经安装vue3
 <br>基于vue3的ref api
 
-<br>演示地址：[文本](https://github.com/aaaaa1414514/vue-refstorage/dist)
+<br>演示地址：[https://aaaaa1414514.github.io/vue-refstorage](https://aaaaa1414514.github.io/vue-refstorage)
 ## demo
 ```
 
