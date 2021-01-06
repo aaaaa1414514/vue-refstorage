@@ -1,8 +1,8 @@
 {
   "name": "vue-refstorage",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "将浏览器Storage转化为响应式数据",
-  "main": "./src/refstorage.js",
+  "main": "./src/js/refstorage.js",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aaaaa1414514/refStorage/issues"
@@ -23,7 +23,6 @@
     "less": "^3.13.0",
     "less-loader": "^7.1.0",
     "vue": "^3.0.0",
-    "vue-refstorage": "^1.0.5",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
