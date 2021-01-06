@@ -2,7 +2,7 @@
   "name": "vue-refstorage",
   "version": "1.0.6",
   "description": "将浏览器Storage转化为响应式数据",
-  "main": "./src/refStorage.js",
+  "main": "./src/refstorage.js",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aaaaa1414514/refStorage/issues"
