@@ -22,7 +22,6 @@ function init (key, val, type) {
   storageVal = ref(getStorageVal(key, type))
 
   watch(storageVal, (e) => {
-    console.log(e)
     // 给storage赋值
     setStorageVal(key, e, type)
   }, {
