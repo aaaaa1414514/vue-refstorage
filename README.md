@@ -14,7 +14,7 @@ import {refLocal,refSession} from 'vue-refstorage'
 steup(props){
   const token = refLocal('toekn')    // ''
   
-  // 当localStorage中没有toekn键名 时 将在localStorage中创建 toekn:123
+  // 当localStorage中没有toekn键名 时 将在localStorage中创建 toekn2:123
   const token2 = refLocal('token2','123)  // 123
   
   const token3 = refLocal('token3,[])   // []
